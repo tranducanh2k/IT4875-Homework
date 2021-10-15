@@ -19,7 +19,10 @@
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="583dp"
+        android:layout_below="@+id/button_toast"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:background="#FFFF00"
         android:gravity="center_vertical"
         android:text="@string/count_initial_value"
@@ -27,20 +30,17 @@
         android:textColor="@color/design_default_color_primary"
         android:textSize="160sp"
         android:textStyle="bold"
-        tools:ignore="RtlCompat"
-        android:layout_below="@+id/button_toast"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/button_count"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@+id/show_count"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="16dp"
         android:background="#00BCD4"
-        android:text="@string/button_label_count"
-        app:layout_constraintHorizontal_bias="0.0"
         android:onClick="countUp"
-        android:layout_below="@+id/show_count"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/button_label_count"
+        app:layout_constraintHorizontal_bias="0.0" />
 </RelativeLayout>
